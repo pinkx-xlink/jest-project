@@ -65,3 +65,6 @@ test('add floating numbers', () => {
 test('there is no I in team', () => {
     expect('team').not.toMatch(/I/);
 });
+test('but there is a "stop" in Christoph', () => {
+    expect('Cristoph').toMatch(/stop/);
+});
