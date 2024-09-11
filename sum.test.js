@@ -61,3 +61,7 @@ test('add floating numbers', () => {
     // This ^ won't work because of rounding error
     expect(value).toBeCloseTo(0.3); // This does work
 });
+
+test('there is no I in team', () => {
+    expect('team').not.toMatch(/I/);
+});
