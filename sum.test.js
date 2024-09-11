@@ -22,6 +22,9 @@ test('adding positive numbers is not zero', () => {
     }
 });
 
+// use the matcher that most precisely
+// corresponds to what you want your code 
+// to be doing
 test('null', () => {
     const n = null;
     expect(n).toBeNull();
