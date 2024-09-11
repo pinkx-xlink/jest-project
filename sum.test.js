@@ -1,3 +1,4 @@
+const { experiments } = require('webpack');
 const sum = require('./sum');
 
 test('adds 1 + 2 to equal 3', () => {
@@ -67,4 +68,16 @@ test('there is no I in team', () => {
 });
 test('but there is a "stop" in Christoph', () => {
     expect('Cristoph').toMatch(/stop/);
+});
+
+const shoppingList = [
+    'diapers',
+    'kleenex',
+    'trash bags',
+    'paper towels',
+    'milk',
+];
+test('the shopping list has milk on it', () => {
+    expect(shoppingList).toContain('milk');
+    expect(new Set(shoppingList)).toContain('milk');
 });
