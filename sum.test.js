@@ -81,3 +81,26 @@ test('the shopping list has milk on it', () => {
     expect(shoppingList).toContain('milk');
     expect(new Set(shoppingList)).toContain('milk');
 });
+
+function compileAndroidCode() {
+    throw new error('you are using the wrong JDK!');
+}
+test('compiling android goes as expected', () => {
+    expect(() => compileAndroidCode()).toThrow();
+    expect(() => compileAndroidCode()).toThrow(Error);
+
+    // can also use a string that must be contained in the error message or a regexp
+    expect(() => compileAndroidCode()).toThrow('you are using the wrong JDK');
+    expect(() => compileAndroidCode()).toThrow(/JDK/);
+    
+    // or you can match an exact error message using a regexp like below
+    // test fails
+    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/);
+    // test passes
+    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK!$/);
+});
+
+// test simply to make sure the sum module exists
+test('it should exist', () => {
+    expect(require('./sum'));
+});
