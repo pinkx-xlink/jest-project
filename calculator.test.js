@@ -1,6 +1,5 @@
+import { sum, subtract } from './calculator';
 const { experiments } = require('webpack');
-const sum = require('./sum');
-const subtract = require('./subtract');
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3);
