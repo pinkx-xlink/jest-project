@@ -1,6 +1,7 @@
 function analyzeArray([array]) {
     const arrLength = array.length;
     let sum = 0;
+    // INVALID LOOP - NEEDS DEBUGGED
     for (let i = 0; i < array.length; i++) {
         sum += array[i];
         return sum;
