@@ -11,9 +11,14 @@ function analyzeArray(array) {
 
     const min = Math.min(...array);
     const max = Math.max(...array);
-    
-    finalResult = average, min, max, arrLength;
-    return finalResult;
+
+    const object = {
+        average: array.average,
+        min: array.min,
+        max: array.max,
+        length: array.arrLength
+    };
+    return object;
 }
 
 module.exports = analyzeArray;
