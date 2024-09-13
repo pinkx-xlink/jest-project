@@ -8,8 +8,9 @@ function analyzeArray(array) {
     }
     average = (sum / arrLength);
 
-
-    return average, min, max, arrLength;
+    const min = Math.min(...array);
+    const max = Math.max(...array);
+    return [average, min, max, arrLength];
 }
 
 module.exports = analyzeArray;
