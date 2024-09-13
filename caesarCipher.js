@@ -17,3 +17,5 @@ function caesarCipher(str, shift) {
     }
     return result;
 }
+
+module.exports = caesarCipher;
