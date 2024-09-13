@@ -1,10 +1,5 @@
-function capitalize(value) {
-    const word = "";
-    const letters = value.split();
-    for(i = 0; i < letters.length; i++) {
-        word += letters[i].substring(0,1).toUpperCase();
-    }
-    return word;
+function capitalize(word) {
+    return word.charAt(0).toUpperCase() + value.slice(1);
 }
 capitalize('hello');
 module.exports = capitalize;
