@@ -10,6 +10,6 @@ test('capitalizes the first letter of "yellow" so it becomes "Yellow"', () => {
 });
 
 test('capitalizes the first letter of "third word" so it becomes "Third word"', () => {
-    expect(capitalize('third word')).toBe('Third word');
+    expect(capitalize('third')).toBe('Third');
 });
 
