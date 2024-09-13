@@ -6,9 +6,9 @@ test('Refactors a string using caesar cipher', () => {
 });
 
 test('Refactors a capitalized string using caesar cipher', () => {
-    expect(caesarCipher('HeLLO', 3)).toBe('KhOOr');
+    expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
 });
 
 test('Refactors a punctuated string using caesar cipher', () => {
-    expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zurog!');
+    expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 });
