@@ -1,4 +1,4 @@
-import { sum, subtract } from './calculator';
+import { sum, subtract, divide } from './calculator';
 const { experiments } = require('webpack');
 
 test('adds 1 + 2 to equal 3', () => {
