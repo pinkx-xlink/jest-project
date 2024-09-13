@@ -1,10 +1,10 @@
 const { experiments } = require('webpack');
-const reverseStr = require('./reverseStr');
+const reverseString = require('./reverseString');
 
 test('reverse a string', () => {
-    expect(reverseStr('hello')).toMatch('olleh');
+    expect(reverseString('hello')).toMatch('olleh');
 });
 
 test('reverses "cute cat" string', () => {
-    expect(reverseStr('cute cat')).toMatch('tac etuc');
+    expect(reverseString('cute cat')).toMatch('tac etuc');
 });
