@@ -3,20 +3,17 @@ function analyzeArray([array]) {
     const arrLength = array.length;
     let sum = 0;
     // INVALID LOOP - NEEDS DEBUGGED
-    function getSum() {
+    function getAverage() {
         for (let i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        getSum();
+        getAverage();
         return sum;
     }
     
     const average = (sum / arrLength);
 
-    function getMin() {
-        const minNum = Math.min(...ourArray);
-        return minNum;
-    }
+    
     getMin();
     
     const max = Math.max(...array);
@@ -24,7 +21,10 @@ function analyzeArray([array]) {
 
     let results = {
         average:
-        min:
+        min: function() {
+            const minNum = Math.min(...ourArray);
+            return minNum;
+        }
         max:
         length:
     }
