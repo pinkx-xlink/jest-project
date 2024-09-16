@@ -12,12 +12,10 @@ function analyzeArray([array]) {
     }
     
     const average = (sum / arrLength);
-
-    
-    getMin();
-    
+    const min = array.reduce((current, previous) => {
+        return Math.min(current, previous);
+    });
     const max = Math.max(...array);
-
 
     const results = {
         average: average,
