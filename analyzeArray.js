@@ -19,15 +19,12 @@ function analyzeArray([array]) {
     const max = Math.max(...array);
 
 
-    let results = {
-        average:
-        min: function() {
-            const minNum = Math.min(...ourArray);
-            return minNum;
-        }
-        max:
-        length:
-    }
+    const results = {
+        average: average,
+        min: min,
+        max: max,
+        length: arrLength,
+    };
     return results;
 }
 
