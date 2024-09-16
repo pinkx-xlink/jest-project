@@ -11,7 +11,7 @@ function analyzeArray([array]) {
     const min = Math.min(...array);
     const max = Math.max(...array);
 
-    return { average, min, max, arrLength };
+    return [average, min, max, arrLength];
 }
 
 module.exports = analyzeArray;
