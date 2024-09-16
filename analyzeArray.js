@@ -21,6 +21,13 @@ function analyzeArray([array]) {
     
     const max = Math.max(...array);
 
+
+    let results = {
+        average:
+        min:
+        max:
+        length:
+    }
     return { average, minNum, max, arrLength };
 }
 
