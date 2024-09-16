@@ -1,26 +1,27 @@
 function analyzeArray([array]) {
-    // let ourArray = array;
+    let ourArray = array;
     const arrLength = array.length;
     let sum = 0;
     // INVALID LOOP - NEEDS DEBUGGED
-    function getSum(array) {
+    function getSum() {
         for (let i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        getSum(array);
+        getSum();
         return sum;
     }
     
     const average = (sum / arrLength);
 
-    array.prototype.min = function() {
-        return Math.min.apply(null, this);
-      };
-
-    const minNum = array.min();
+    function getMin() {
+        const minNum = Math.min(...ourArray);
+        return minNum;
+    }
+    getMin();
+    
     const max = Math.max(...array);
 
-    return [array.average, minNum, array.max, array.arrLength];
+    return { average, minNum, max, arrLength };
 }
 
 module.exports = analyzeArray;
