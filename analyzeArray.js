@@ -1,5 +1,3 @@
-const { curry } = require("lodash");
-
 function analyzeArray([array]) {
     
     const arrLength = array.length;
