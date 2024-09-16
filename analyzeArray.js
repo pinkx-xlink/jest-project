@@ -5,9 +5,9 @@ function analyzeArray([array]) {
     function getSum() {
         for (let i = 0; i < array.length; i++) {
             sum += array[i];
-            return sum;
         }
         getSum();
+        return sum;
     }
     
     const average = (sum / arrLength);
