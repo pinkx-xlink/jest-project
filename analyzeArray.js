@@ -1,6 +1,8 @@
-function analyzeArray([array]) {
-    
-    const arrLength = array.length;
+const analyzeArray = (array) => {
+    if (array.length === 0) {
+        return 'not an array';
+    } else {
+        const arrLength = array.length;
 
     const sum = array.reduce((current, previous) => {
         return current + previous;
@@ -19,6 +21,7 @@ function analyzeArray([array]) {
         length: arrLength,
     };
     return results;
+    }
 }
 
 module.exports = analyzeArray;
