@@ -28,7 +28,7 @@ function analyzeArray([array]) {
         max:
         length:
     }
-    return { average, minNum, max, arrLength };
+    return results;
 }
 
 module.exports = analyzeArray;
